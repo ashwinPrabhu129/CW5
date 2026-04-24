@@ -30,11 +30,11 @@ class FilteredList extends Component {
       <div className="filter-list task-card">
         <input type="text" placeholder="Search" onChange={this.onSearch} />
         
-        <DropdownButton title="Filter" id="typeDropdown" onSelect={this.onFilter}>
-          <MenuItem eventKey="All">All</MenuItem>
-          <MenuItem eventKey="Fruit">Fruit</MenuItem>
-          <MenuItem eventKey="Vegetable">Vegetable</MenuItem>
-        </DropdownButton>
+<DropdownButton title="Filter" id="typeDropdown" onSelect={this.onFilter}>
+  <Dropdown.Item eventKey="All">All</Dropdown.Item>
+  <Dropdown.Item eventKey="Fruit">Fruit</Dropdown.Item>
+  <Dropdown.Item eventKey="Vegetable">Vegetable</Dropdown.Item>
+</DropdownButton>
 
         <List items={filterItem} />
       </div>
