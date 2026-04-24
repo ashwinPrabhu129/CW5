@@ -1,0 +1,29 @@
+import React, { Component } from 'react';
+
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 5
+    };
+  }
+
+  incrementCount = () => {
+    this.setState({
+      count: this.state.count + 1
+    });
+  }
+
+  render() {
+    return (
+      <div className="counter task-card">
+        <p>{this.state.count}</p>
+        <button onClick={this.incrementCount}>
+          Increment
+        </button>
+      </div>
+    );
+  }
+}
+
+export default Counter;
